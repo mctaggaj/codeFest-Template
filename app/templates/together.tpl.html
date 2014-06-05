@@ -1,0 +1,42 @@
+﻿
+<link rel="stylesheet" href="css/custom.css" />
+<div class="container" ng-controller="MyCtrl2">
+
+    <div id="listPanel" class="panel">
+        <h3 class="panel-header">Binding And Template Directives</h3>
+        <div class="btn-group" data-toggle="radio">
+            <label class="btn btn-primary" ng-cloak ng-repeat="button in ['None', 'Table', 'List']">
+                <input type="radio" ng-model="data.mode"
+                       value="{{button}}" ng-checked="$first">
+                {{button}}
+            </label>
+        </div>
+        <div ng-switch on="data.mode" ng-cloak>
+            <div ng-switch-when="Table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Action</th>
+                            <th>Done</th>
+                        </tr>
+                    </thead>
+                    <tr ng-repeat="item in items" ng-class="$odd ? 'odd' : 'even'">
+                        <td>{{$index + 1}}</td>
+                        <td ng-repeat="prop in item">{{prop}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div ng-switch-when="List">
+                <ol>
+                    <li ng-repeat="item in items">
+                        <input type="checkbox" ng-model="item.complete" />{{item.action}}
+                    </li>
+                </ol>
+            </div>
+            <div ng-switch-default>
+                Select another option to display a layout
+            </div>
+        </div>
+    </div>
+</div>
