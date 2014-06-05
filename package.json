@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "description": "starter project for Cetaris code fest",
-  "repository": "https://github.com/angular/angular-seed",
+  "repository": "https://github.com/mctaggaj/codeFest-Template",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.3.1"
