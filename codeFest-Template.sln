@@ -8,7 +8,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "codeFest-Template", "http:/
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_60086"
-		Debug.AspNetCompiler.PhysicalPath = "D:\codeFest-Template\"
+		Debug.AspNetCompiler.PhysicalPath = "..\codeFest-Template\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60086\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
@@ -21,7 +21,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "codeFest-Template", "http:/
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "D:\codeFest-Template\"
+		SlnRelativePath = "..\codeFest-Template\"
 	EndProjectSection
 EndProject
 Global
